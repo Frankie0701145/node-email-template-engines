@@ -1,11 +1,14 @@
 //helper functions
-let required = ()=>{
-    throw(new Error('templatePath argument is required'));
+let errMessageTemplatePath = 'templatePath argument is required';
+let errMessagePassObject = 'passObject argument is required';
+let required = (message)=>{
+    throw(new Error(message));
 };
 
 
 
-const emailTemplateEngine = (templatePath=required(), passObject)=>{
+
+const emailTemplateEngine = (templatePath=required(errMessageTemplatePath), passObject=required(errMessagePassObject))=>{
 
     //the templatePath is the absolute path to the view.
     //the passObject is the data to be passed to the view.

@@ -6,16 +6,23 @@ let expect =chai.expect;
 describe('Email Template Engine Test', ()=>{
 
     let ejsTemplatePath;
+    let passObject = {};
 
     before(()=>{
         ejsTemplatePath = path.resolve(__dirname, './views/ejsTest.ejs');
     });
 
 
-    it('An error should be thrown if the templatePath argument is not supplied', ()=>{
+    it('Expect an error to be thrown if the templatePath argument is not supplied', ()=>{
         expect(()=>{
             emailTemplateEngine();
         }).to.throw('templatePath argument is required');
+    });
+
+    it('Expect an error to be thrown if the passObject argument is not supplied', ()=>{
+        expect(()=>{
+            emailTemplateEngine(ejsTemplatePath);
+        }).to.throw('passObject argument is required');
     });
 
 
