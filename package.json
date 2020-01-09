@@ -2,7 +2,7 @@
   "name": "node-email-template-engines",
   "version": "1.0.0",
   "description": "npm package that enables creation for custom email templates using popular view engines, passing data to the view, using css and images.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
