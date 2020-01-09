@@ -12,6 +12,8 @@
     "registry": "https://npm.pkg.github.com/@frankie0701145"
   },
   "devDependencies": {
-    "ejs": "^3.0.1"
+    "chai": "^4.2.0",
+    "ejs": "^3.0.1",
+    "mocha": "^7.0.0"
   }
 }
