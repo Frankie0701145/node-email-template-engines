@@ -4,7 +4,7 @@
   "description": "npm package that enables creation for custom email templates using popular view engines, passing data to the view, using css and images.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --exit --timeout 100000"
   },
   "author": "Francis Njuguna",
   "license": "ISC",
