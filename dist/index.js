@@ -1,7 +1,11 @@
+//helper functions
+let required = ()=>{
+    throw(new Error('templatePath argument is required'));
+};
 
 
 
-const emailTemplateEngine = (templatePath, passObject)=>{
+const emailTemplateEngine = (templatePath=required(), passObject)=>{
 
     //the templatePath is the absolute path to the view.
     //the passObject is the data to be passed to the view.
@@ -18,7 +22,7 @@ const emailTemplateEngine = (templatePath, passObject)=>{
 
     //switching between the different fileExtension
     switch(fileExtension){
-        
+
         //in case it is EJS
         case 'ejs':
             break;
@@ -30,5 +34,6 @@ const emailTemplateEngine = (templatePath, passObject)=>{
     }
 
 }
+
 
 module.exports =  emailTemplateEngine;

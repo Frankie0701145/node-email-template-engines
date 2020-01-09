@@ -11,6 +11,14 @@ describe('Email Template Engine Test', ()=>{
         ejsTemplatePath = path.resolve(__dirname, './views/ejsTest.ejs');
     });
 
+
+    it('An error should be thrown if the templatePath argument is not supplied', ()=>{
+        expect(()=>{
+            emailTemplateEngine();
+        }).to.throw('templatePath argument is required');
+    });
+
+
     it('Expect to get an error if the file extension of the view is not supported', ()=>{
             let testEjsPath = path.resolve('./views/l.pug');
             console.log(testEjsPath);
