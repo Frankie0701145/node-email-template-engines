@@ -4,7 +4,8 @@
   "description": "Node package that facilitates the creation of custom email templates (using popular view engines),  passing of data to the email template, and using CSS.",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha --exit --timeout 100000"
+    "test": "mocha --exit --timeout 100000",
+    "deploy": "npm publish"
   },
   "author": "Francis Njuguna",
   "license": "ISC",
