@@ -9,9 +9,6 @@
   },
   "author": "Francis Njuguna",
   "license": "ISC",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@frankie0701145"
-  },
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
