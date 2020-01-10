@@ -32,9 +32,9 @@ describe('Email Template Engine Test', ()=>{
 
 
     it('Expect to get an error if the file extension of the view is not supported.', async ()=>{
-            let testEjsPath = path.resolve('./views/l.pug');
+            let testEjsPath = path.resolve('./views/l.g');
             await expect(emailTemplateEngine(testEjsPath, passObject))
-                   .to.be.rejectedWith('For now the view with pug is not supported only ejs is supported.');
+                   .to.be.rejectedWith('For now the view with g is not supported only ejs is supported.');
     });
 
     it('Expect to get an error if the file path of the view is wrong.', async ()=>{
