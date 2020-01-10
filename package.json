@@ -1,7 +1,7 @@
 {
   "name": "node-email-template-engines",
   "version": "1.0.0",
-  "description": "npm package that enables creation for custom email templates using popular view engines, passing data to the view, using css and images.",
+  "description": "Node package that facilitates the creation of custom email templates (using popular view engines),  passing of data to the email template, and using CSS.",
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha --exit --timeout 100000"
