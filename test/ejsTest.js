@@ -48,7 +48,11 @@ describe('Email Template Engine Test', ()=>{
         await expect(emailTemplateEngine(testEjsPath, passObject))
                .to.be.rejectedWith(expectedError);
     });
-
+    it.only('Expect that the passObject is accessible to the view', async ()=>{
+        let strHtml = await emailTemplateEngine(ejsTemplatePath, passObject);
+        expect(strHtml).to.include(passObject.firstName);
+        expect(strHtml).to.include(passObject.lastName);
+    });
     // it('Expect to get back the back html str with the correct ejs template path', async ()=>{
 
     //     let strHtml = await emailTemplateEngine(ejsTemplatePath, passObject);
